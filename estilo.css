@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout do corpo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+/* Corpo */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgba(255, 182, 193, 0.7), rgba(255, 255, 224, 0.7), rgba(144, 238, 144, 0.7));
+    color: #333;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .corporate-icon {
+    font-size: 1.2rem;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 300px;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Restante do estilo permanece igual */
+
+.validate {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.success {
+    background-color: limegreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*  */
+#avatar-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#validate-name{
+    font-weight: bold;
+    font-size: 3rem;
+    color: darkblue;
+}
+
+#alunos, #sorteados, #erros, #acertos {
+    font-size: 2.5rem;
+}
+
+/* Estilo para o texto no modal de finalização */
+#end-message p {
+    margin: 10px 0; /* Espaçamento entre as linhas */
+    font-size: 1.2rem; /* Ajuste de tamanho do texto */
+    text-align: center;
+}
+
+/* Espaçamento entre o texto e o botão */
+#restart-button {
+    margin-top: 20px; /* Espaçamento adicional */
+}
+sup {
+    font-weight: bold;
+    color: darkblue;
+    text-shadow: 2 2 2 red;
+}
+.avatar{
+    color: blue;
+    font-weight: 700;
+}
+button{
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.8);
+}
+span {
+    text-shadow: 2px 2px 2px rgba(0, 0, 255, 0.6);
+}

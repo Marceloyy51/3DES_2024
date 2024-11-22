@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerte o Nome dos Avatares</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <span>Alunos: <strong id="alunos" style="color: blue;">10</strong></span>
+            <span>Sorteados: <strong id="sorteados" style="color: purple;">0</strong></span>
+            <span>Total de Erros: <strong id="erros" style="color: red;">0</strong></span>
+            <span>Total de Acertos: <strong id="acertos" style="color: green;">0</strong></span>
+        </div>
+    </header>
+
+    <main>
+        <h1>Acerte o Nome dos <span class="avatar">Avatares</span></h1>
+        <button id="start-button">Apresentar Avatar<br><br><i class="fa-solid fa-eye"></i> </button>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <strong>Prof. <i class="fa-solid fa-m"></i>arcelo Yamamoto</strong><sup>&reg;</sup> <span class="corporate-icon">&#x1F4BC;</span></p>
+    </footer>
+
+    <!-- Modal principal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <img id="avatar-image" src="" alt="Avatar" />
+            <p id="avatar-name">Quem sou eu??</p><br>
+            <button id="validate-button" class="validate">Validar <i class="fa-solid fa-user-pen"></i></button>
+        </div>
+    </div>
+
+    <!-- Modal de validação -->
+    <div id="validate-modal" class="modal">
+        <div class="modal-content">
+            <p id="validate-name"></p><br>
+            <button id="correct-button" class="success">Acertou <i class="fa-solid fa-check"></i></button>
+            <button id="wrong-button" class="error">Errou <i class="fa-regular fa-rectangle-xmark"></i></button>
+        </div>
+    </div>
+
+    <!-- Modal de finalização -->
+    <div id="end-modal" class="modal">
+        <div class="modal-content">
+            <p id="end-message"></p><br>
+            <button id="restart-button" class="restart">Finalizar <i class="fa-regular fa-circle-xmark"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
